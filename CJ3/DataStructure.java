@@ -11,7 +11,7 @@ eight data-structures in Java
     2) double   8bytes      +- 1.797 693 134 862 315 70E + 308
 
     what'a about NaN
-    NaN is not a direct number, it's means a status, as 0/0 Squr(-1)
+    NaN is not a direct number, it's means a status, as 0/0 Sqrt(-1)
 
 3. char
     Do not recommand
@@ -20,6 +20,8 @@ eight data-structures in Java
     false and true
     can not conv boolean and int
 */
+
+import java.lang.Math;
 
 public class DataStructure {
     public static void main(String[] args) {
@@ -31,7 +33,46 @@ public class DataStructure {
         double f = 1.4444d;  // remenber how to define
         boolean g = true;
         char letter = 'A';
+
+        // variable
+        int vacationDay;
+        vacationDay = 12;
+        double salay = 3600.112;
+
+        // const, use final to declear const
+        final double CM_PER_INCH = 2.555;   // only one time to give CM_PER_INCH a value, can not give a value again
+        // CM_PER_INCH = 11123; it's wrong!
+
         System.out.println(c);
-        System.out.println(g);
+        System.out.println(salay);
+        System.out.println(vacationDay);
+        System.out.println(USUAL_CONST+CM_PER_INCH);
+
+        // operation
+
+        System.out.println(5/2); // 2
+        System.out.println(5/2.3); // 2.173913043478261
+        // n++ and ++n
+        int n = 7;
+        int m = 7;
+        int h = 2 * n++; // h = 14, n=8
+        int i = 2 * ++m; // i = 16, m=8
+        System.out.println(h);
+        System.out.println(i);
+
+        // logic operation
+        // && == and, || == or
+
+        // ternary expression
+        // condition ? exp1 : exp2; if condition is true, exp1, else exp2
+        System.out.println(a < b ? a : b);
+
+        double x = Math.sqrt(a); 
+        double y = Math.pow(a, 2); // pow receive two double params, return a double value
+
+        System.out.println(x);
+        System.out.println(y);
     }
+    // class constants, able to use this const in many func in a class
+    public static final double USUAL_CONST = 3.555;
 }
