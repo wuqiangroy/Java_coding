@@ -1,12 +1,10 @@
 import java.util.*;
+// while loop
 
-public class Retirement {
+
+public class Retirement2 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-
-        System.out.println("How much money do you need to retire?");
-        double goal = in.nextDouble();
-
         System.out.println("How much money will you contribute every year?");
         double payment = in.nextDouble();
 
@@ -14,14 +12,20 @@ public class Retirement {
         double interestRate = in.nextDouble();
 
         double balance = 0;
-        int year = 0;
+        int years = 0;
 
-        while (balance < goal) {
+        String input;
+
+        do {
             balance += payment;
             double interest = balance * interestRate / 100;
             balance += interest;
-            year++;
+            years++;
+
+            System.out.printf("After year %d, your balance is %.2f%n\n", years, balance);
+            System.out.println("Ready to retire?(Y/N)");
+            input = in.next();
         }
-        System.out.printf("you can retire in %d years.", year);
+        while (input.equals("N")); 
     }
 }
