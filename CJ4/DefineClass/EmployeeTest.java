@@ -30,7 +30,7 @@ class Employee {
         name = n;
         salary = s;
         GregorianCalendar calendar = new GregorianCalendar(year, month-1, day);
-        // why month-1? 
+        // why month-1? it's month offset
         hireDay = calendar.getTime();
     }
 
