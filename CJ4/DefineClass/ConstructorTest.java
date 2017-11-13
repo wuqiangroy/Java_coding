@@ -57,4 +57,8 @@ class Employee4 {
         return id;
     }
 
+    public static void main(String[] args) {
+        Employee4 Harry = new Employee4("Harry", 41000);
+        System.out.println("name: "+Harry.getName()+" id: "+Harry.getId()+" salary: "+Harry.getSalary());
+    }
 }
