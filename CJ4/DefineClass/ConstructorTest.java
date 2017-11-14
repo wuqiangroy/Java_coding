@@ -12,7 +12,6 @@ public class ConstructorTest {
             System.out.println("name: "+e.getName()+" id: "+e.getId()+" salary: "+e.getSalary());
         }
     }
-    
 }
 
 
