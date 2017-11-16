@@ -103,3 +103,4 @@ ENV/
 
 # java file
 *.class
+*.DS_Store
