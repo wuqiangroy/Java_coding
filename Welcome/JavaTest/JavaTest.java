@@ -26,6 +26,6 @@ public class JavaTest {
 
         double n = Double.MIN_VALUE;
         System.out.println(n);
-
+        
     }
 }
